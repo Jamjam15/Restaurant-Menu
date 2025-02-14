@@ -51,7 +51,7 @@ margin: 0;
 .sidebar-options{
     position: fixed;
     top: 120px;
-    left: 20px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -65,7 +65,7 @@ margin: 0;
 
 .sidebar-options ul li{
     list-style-type: none;
-    font-weight: semi-bold;
+    font-weight: 600;
     font-size: 14px;
     padding: 14px;
     display: flex;
@@ -86,7 +86,8 @@ margin: 0;
     background-color: #16404D;
     color: white;
     border-radius: 28px;
-    width: 169px;
+    width: calc(100% - 40px);
+    max-width: 169px;
     height: 44px;
     box-sizing: border-box;
 }
@@ -102,9 +103,9 @@ margin: 0;
     width: 120px; /* Adjust width as needed */
     padding: 0px;
 
-    position: absolute;
+    position: fixed;
     left: 35px;
-    top: 700px;
+    bottom: 20px;
 }
 
 .logout img {
